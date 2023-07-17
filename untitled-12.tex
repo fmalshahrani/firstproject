@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{scrextend}
+\addtokomafont{labelinglabel}{\bfseries}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage[style=authoryear, backend=bibtex]{biblatex}
+%\addbibresource{\untitled.bib}
+\nocite{*}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\begin{document}
+	{\huge\textbf{John Birdwatch}\par}
+	+44 1234 9876 \par johnbirdwatch@watchingbirds.org\par
+	Sunny Lane 15 \par Duckbourgh\par
+	\vspace{1cm}
+	\begin{labeling}{Longest list item}
+		\item [Computer Skills] \LaTeX, PERL, Windows, Linux
+		\item [Education] \parbox[t]{.8\textwidth}{
+			Master of Arts in 2015 for \textsc{Pigeons love doves}\par
+			Bachelor of Arts in 2013 for \textsc{Pigeons in Cities}
+		}
+	\end{labeling}
+	\section{Former watches}
+	\begin{description}[align=left,leftmargin=4cm,style=multiline]
+		\item[2011 (three months)] Birdwatching in Iceland \\ one month in the capital \\ two months driving around the island
+		\item[2012 (six weeks), 2017 (8 weeks)] The Canopy Tower in Panama\bigskip
+		\item[2013 (one week)] Venice, Italy
+	\end{description}
+	\printbibliography[title=Publications,heading=subbibliography,keyword=ownpub]
+\end{document}
